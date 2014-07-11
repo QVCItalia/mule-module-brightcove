@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:spring="http://www.springframework.org/schema/beans"
+      xmlns:brightcove="http://www.mulesoft.org/schema/mule/brightcove"
+      xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+        http://www.mulesoft.org/schema/mule/brightcove http://www.mulesoft.org/schema/mule/brightcove/1.0-SNAPSHOT/mule-brightcove.xsd">
+
+    <brightcove:config name="BrightcoveConfig" restUrl="http://localhost:8090" readToken="readTokenString" writeToken="writeTokenString" />
+    
+    <flow name="testFindPlaylistByReferenceId">
+    	<brightcove:find-playlist-by-reference-id config-ref="BrightcoveConfig" referenceId="pl_test" />
+    </flow>
+    
+  	<flow name="testDeleteVideo">
+		<brightcove:delete-video config-ref="BrightcoveConfig" videoId="3663915106001" />
+    </flow>
+
+</mule>

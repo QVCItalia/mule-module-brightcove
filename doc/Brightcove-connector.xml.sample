@@ -1,0 +1,15 @@
+<!-- BEGIN_INCLUDE(brightcove:find-playlist-by-reference-id) -->
+    <brightcove:find-playlist-by-reference-id referenceId="test" />
+<!-- END_INCLUDE(brightcove:find-playlist-by-reference-id) -->
+
+<!-- BEGIN_INCLUDE(brightcove:find-video-by-id) -->
+    <brightcove:find-video-by-id videoId="test" />
+<!-- END_INCLUDE(brightcove:find-video-by-id) -->
+
+<!-- BEGIN_INCLUDE(brightcove:delete-video) -->
+    <brightcove:delete-video videoId="123" />
+<!-- END_INCLUDE(brightcove:delete-video) -->
+
+<!-- BEGIN_INCLUDE(brightcove:delete-playlist) -->
+    <brightcove:delete-playlist playlistId="123" />
+<!-- END_INCLUDE(brightcove:delete-playlist) -->
