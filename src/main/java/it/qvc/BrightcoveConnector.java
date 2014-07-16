@@ -188,7 +188,7 @@ public class BrightcoveConnector
     * @return Some string
     */
    @Processor
-    public  String findPlaylistByReferenceId(String referenceId) {
+    public String findPlaylistByReferenceId(String referenceId) {
 	   
 		String urlString = getRestUrl() + GET_URL + FIND_PLAYLIST_BY_REFERENCE_ID;
 		
@@ -200,7 +200,7 @@ public class BrightcoveConnector
 	   	HttpURLConnection conn = null;
 		InputStream in = null;
 		URL url;
-		String result = "";
+		String result = null;
 		
 		try {
 			/* Set Http Connection */
@@ -212,6 +212,10 @@ public class BrightcoveConnector
 	    	
 	    	in = conn.getInputStream();
 	    	result = IOUtils.toString(in, "UTF-8");
+	    	
+	    	if(("null").equals(result)) {
+	    		result = null;
+	    	}
 				    	
 			
 		} catch (Exception e) {
