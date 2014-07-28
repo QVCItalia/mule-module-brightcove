@@ -4,3 +4,4 @@ target
 .settings
 CHANGELOG.md
 mule-project.xml
+mule-config.mflow

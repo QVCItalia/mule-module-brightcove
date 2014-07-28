@@ -1,15 +1,21 @@
 
-Mulemodulebrightcove
+Mule Brightcove Module
 =========================
 
-FILL IN DESCRIPTION
+Brightcove VIDEOCLOUD is highly-scalable, secure video hosting platform.
 
-Installation and Usage
+This module will allow you to interact with the Brightcove cloud service.
+
+Read the [complete user guide](https://github.com/QVCItalia/mule-module-brightcove/blob/master/GUIDE.md).
+
+Maven Support
 ----------------------
 
-For information about usage and installation you can check our documentation at http://mulesoft.github.com/mule-module-brightcove.
+To add the Brightcove module to your project add the following dependency:
+	
+	<dependency>
+		<groupId>it.qvc</groupId>
+    	<artifactId>mule-module-brightcove</artifactId>
+    	<version>x.y.z</version>
+	</dependency>
 
-Reporting Issues
-----------------
-
-We use GitHub:Issues for tracking issues with this connector. You can report new issues at this link https://github.com/mulesoft/mule-module-brightcove/issues
